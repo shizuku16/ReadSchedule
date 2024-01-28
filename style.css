@@ -12,6 +12,7 @@ table{
 .fix{
     position: sticky;
     top: 0;
+    width:100%
     height: 8ch;
     background: #fff;
     margin-bottom: 1ch;
