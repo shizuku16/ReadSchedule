@@ -67,7 +67,7 @@ function makeDateTable(){
             lastDay=30;
             break;
     }
-    string=`<tr class="header"><td>日付</td></tr>`;
+    string=`<tr><td class="header">日付</td></tr>`;
     let day=["日","月","火","水","木","金","土"];
     while(table.firstChild ){
         table.removeChild( table.firstChild );
@@ -90,7 +90,7 @@ function display(){
     //既に表示されていたらスキップ
     if(tableData[0].match(member)) return;
     //データ追加
-    tableData[0]=tableData[0]+`<td id="${member}">${member}<button onclick="deleteColumn(this)" id="${member}delete">×</button></td>`;
+    tableData[0]=tableData[0]+`<td class="header" id="${member}">${member}<button onclick="deleteColumn(this)" id="${member}delete">×</button></td>`;
     for(let i=1;i<tableData.length-1;i++){
         tableData[i]=tableData[i]+`<td style="text-align: center;" id="${member}${i}">${data[member][i-1]}</td>`;
     }
