@@ -1,0 +1,37 @@
+td,th{
+    border:solid 1px #aaaaaa;
+    padding:1px 10px;
+}
+table{
+    border-collapse:collapse;
+    padding: 10px;
+    touch-action: manipulation;
+}
+
+
+.fix{
+    position: sticky;
+    top: 0;
+    height: 8ch;
+    background: #fff;
+    margin-bottom: 1ch;
+  }
+
+.header{
+    position: sticky;
+    top: 8ch;
+    height: 1ch;
+    background: #fff;
+    margin-bottom: 1ch;
+}
+
+.head{
+    height: 50px;
+}
+
+input{
+    width: 6ch;
+}
+button{
+    margin-left: 1ch;
+}

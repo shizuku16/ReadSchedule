@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>予定表を操作する</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class="fix">
+    <p>
+        <select id="year"><option>2024年</option></select>
+        <select id="month"></select>
+        <button onclick="dataGet()">データ取得</button><br>
+    </p>
+    メンバー：<select id="member"></select>
+    <button onclick="display()">追加</button>
+
+    </div>
+    
+    <table id="table">
+    </table>
+
+</body>
+</html>
