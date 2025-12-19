@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     const select=document.getElementById("month");
     let string="";
     let selectMonth=thisMonth+1;
-    for(let i=1;i<=selectMonth;i++) string+=`<option>${i}月</option>`;
+    for(let i=1;i<=Math.min(selectMonth,12);i++) string+=`<option>${i}月</option>`;
     select.insertAdjacentHTML("beforeend",string);
     select.value=`${thisMonth}月`;
 
